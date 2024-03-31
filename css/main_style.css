@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/* CSS Document */
+body
+{
+	font-family:"Roboto", Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	margin: 0px;
+	color: #323334;
+}
+h1
+{
+	font-family: "Dancing Script", cursive;
+	font-size: 42px
+}
+.color-primary{color: #F98031}
+.color-secondary{color: #3AB549}
+a
+{
+	color: #323334;
+	text-decoration: none
+}
+a:hover
+{
+	color: #3AB549
+}
+nav
+{
+	border-top: 1px #E9E9E9 solid;
+}
+nav ul
+{
+	list-style: none;
+	display: flex;
+	justify-content:space-between;
+	padding: 0;
+	font-size: 0.9rem
+}
+nav ul li a{padding: 5px 10px; transition: all 1s; display: block; border-bottom: #ffff; padding-bottom: 0px}
+nav ul li a:hover
+{
+	color: #000;
+	border-bottom: 2px solid #3AB549
+}
+nav ul li {position: relative}
+nav ul li ul
+{
+	position: absolute;
+	top:100%;
+	left: 0;
+	flex-direction: column;
+	background: #fff;
+	width: 250px;
+	visibility: hidden;
+	box-shadow: 0px 0px 5px #000 ;
+	transition: all 1s;
+	opacity: 0;
+	text-align: left;
+	padding: 15px 15px;
+	margin: 0
+}
+nav ul li:hover ul
+{ 
+    visibility: visible;
+	opacity: 1;
+    top: 120%;
+	z-index: 1;
+	color: #3AB549
+}
+.box
+{
+	position: relative;
+	width: 80%;
+	background: #EAEAEA;
+	height: 170px;
+	margin-top: 70px;
+	padding-top: 0px;
+	margin-left: 10%
+}
+.box-item
+{
+	position: absolute;
+	width: 100%;
+	height: 70%;
+	border: 2px red;
+	left: 0%;
+	top: -40%;
+}
+.box-news
+{
+	position: relative;
+	width: 100%;
+	background: white;
+	height: 360px;
+	margin: 15px;
+}
+.caption-box
+{
+	position: absolute;
+	width: 100%;
+}
+.caption-box-text
+{
+	position: absolute;
+	border: 1px #000 ;
+	padding: 0px 15px
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {position: absolute;
+  width: 80%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 30px; /* Add a top margin */
+  margin-bottom: 30px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  margin-left: 10%
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	position: absolute;
+  background-color: #7BC639;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	margin-top: 30px;
+	margin-left: 38%
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #3AB549;
+}
+.submit-box
+{
+	background: #EAEAEA;
+	width: 40%;
+	position: relative;
+	height: 200px;
+	left: 30%;
+	margin-bottom: 50px
+}
+.border
+{
+	border: 1px #323334 solid;
+	padding: 10px
+}
+.border:hover
+{
+	border: 1px #3AB549 solid
+}
+.container2
+{
+	width: 90%;
+	margin: auto
+}
+.box-w
+{
+	width: 100%;
+	background: #EAEAEA;
+	position: relative;
+	height: 549px;
+	margin: 15px;
+	box-shadow: 0 0 15px 0px #929292;
+}
+.box-w-2
+{
+	width: 100%;
+	background: #EAEAEA;
+	position: relative;
+	height: 173px;
+	margin: 15px;
+	margin-left: 0px;
+	box-shadow: 0 0 15px 0px #929292;
+}
+.caption-box2
+{
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0
+}
+.caption-box-text2
+{
+	position: absolute;
+	border: 1px #000;
+	padding: 0px 15px;
+	width: 60%;
+	left: 30%;
+	height: auto;
+}
+.border-caption
+{
+	width: 100%;
+	border: 1px #323334 solid;
+	padding: 30px
+}
+.border-caption:hover
+{
+	border: 1px #3AB549 solid
+}
+.text-gold
+{
+	color: #FFBE00
+}
+input[type=text1], select, textarea {position: absolute;
+  width: 30%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 30px; /* Add a top margin */
+  margin-bottom: 30px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  margin-left: 0%
+}
+input[type=submit1] {
+	position: absolute;
+  background-color: #7BC639;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	margin-top: 30px;
+	margin-left: 0%;
+	width: 5%;
+	text-align: center
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit1]:hover {
+  background-color: #3AB549;
+}

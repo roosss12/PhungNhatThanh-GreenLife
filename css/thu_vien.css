@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/* CSS Document */
+*{ 	box-sizing: border-box}
+.col-1 { width: 8.33%}
+.col-2{ width:16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+.row 
+{
+	display:flex; 
+	flex-wrap:wrap
+}
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px red
+}
+.p-0{ padding: 0}
+.p-5{ padding: 5px}
+.p-10{ padding: 10px}
+
+.container 
+{ 
+	width: 80%; 
+	margin: auto
+}
+.img-100
+{
+	width: 100%; 
+	height: auto;
+}
+.bg-xam
+{
+	background: #F8F8F8
+}
+.mx-auto { margin:0 auto}/* dẩy box vào giữa (ngang)*/
+.text-center{ text-align: center} /*canh text vào giửa*/
+.text-right{ text-align: right}/*canh text qua phai*/
+/*-- thu vien cho bố cục flex*/
+.d-flex{ display: flex}
+/*--- đẩy các cột/ đối tượng trong flex theo chiều ngang*/
+.justify-center{ justify-content: center}
+.justify-between{ justify-content: space-between}
+.justify-around{ justify-content: space-around}
+.justify-right{ justify-content: flex-end}
+/*------------- đẩy các cột canh theo chiều dọc----*/
+.align-items-center{ align-items: center}
+.align-items-end{ align-items: flex-end}
+/*-------------hướng đảo của cac cột trong row co flex----*/
+.row-revese {flex-direction: row-reverse}
+.btn-primary-outline/*nút bấm*/
+{
+	border: 2px #3AB549;
+	padding: 10px 20px;
+	font-size: 1.1rem;
+	transition: all 0.5s;
+	width: 40%;
+	left: 30%;
+	position: absolute;
+	background: #7BC639;color: white
+}
+.btn-primary-outline:hover
+{
+	background: #3AB549;
+	color: white
+}
+.btn-primary-outline2/*nút bấm*/
+{
+	border: 2px #3AB549;
+	padding: 10px 20px;
+	font-size: 1.1rem;
+	transition: all 0.5s;
+	width: 20%;
+	left: 40%;
+	position: absolute;
+	background: #7BC639;color: white
+}
+.btn-primary-outline2:hover
+{
+	background: #3AB549;
+	color: white
+}
+/*.box
+{
+	width: 100px;
+	height: 50px;
+	background: tomato;
+	position: fixed;
+	right: -70px;
+	top: 300px;
+	z-index: 2;
+	transition: all 0.5s;
+	margin: 0
+}
+.box:hover
+{
+	right: 0;
+	background: #0C32E1
+}*/
+.chatbox/*khung chat*/
+{
+	width: 300px;
+	height: 200px;
+	background: tomato;
+	position: fixed;
+	right: -250px;
+	bottom: 0;
+	z-index: 2;
+	transition: all 1s
+}
+.chatbox:hover
+{
+	right: 0;
+	background: #0C32E1
+}
+.overdark/*làm tối toàn phần để nổi phần ads-box*/
+{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1
+}
+.ads-box/*khung quảng cáo*/
+{
+	width: 50%;
+	height: 80%;
+	background: white;
+	position: fixed;
+	left: 25%;
+	top: 10%;
+	z-index: 3
+}
+.btn-dong/*đóng khung quảng cáo*/
+{
+	padding: 5px 10px;
+	border: 2px tomato solid;
+}
+.banner/*hình nền*/
+{
+	position: relative;
+	margin-top: 115px
+}
+.banner-caption
+{
+	position: absolute;
+	top: 20%;
+	width: 80%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 100px;
+	font-family: "Dancing Script", cursive;
+	text-shadow: 1px 1px 5px #333;
+	border: #FFFFFF solid;
+	margin-left: 10%
+}
+.banner-caption2
+{
+	position: absolute;
+	top: 20%;
+	width: 40%;
+	text-align: center;
+	color: #323334;
+	background: rgba(255,255,255,0.8);
+	height: 50%;
+	margin-left: 60px;
+	padding: 10px;
+}
+.banner-caption3
+{
+	position: absolute;
+	top: 20%;
+	width: 45%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 5px #333;
+	padding-left: 2%;
+	border: 1px #000 
+}
+.sp { position: relative;}/*icon hiển thị khi để chuột vào sp*/
+.sp-icon
+{ 
+	position: absolute;
+    background-color: rgba(255,255,255,0.8);
+    border: 2px red;
+    padding: 10px 20px;
+    top: 10%;
+	left: 40%;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.sp:hover> .sp-icon{opacity: 1; top: 40%}
+footer
+{
+	padding: 0px 0px;
+	background-color: whitesmoke;
+	color: #323334;
+	padding-top: 20px;
+	
+}
+footer ul
+{
+	margin: 0;
+	padding: 10px 0;
+	list-style: none;
+}
+footer a
+{
+	color: #323334;
+	display: block;
+	padding: 10px 0;
+}
+footer h5
+{
+	background: #3AB549;
+	padding: 10px 0px;
+	margin: 0;
+	color: whitesmoke;
+}
+.top-page{ position: relative;margin-top: 40px}
+.caption
+{
+	position: absolute;
+	top: 45px;
+	width: 80%;
+	height: 60%;
+	color: #000;
+	border: 1px #000;
+	margin-top: 30px;
+	margin-left: 130px
+	/*text-shadow: 1px 1px 5px #333*/
+}
+.caption2
+{
+	position: absolute;
+	top: 45px;
+	width: 80%;
+	height: 80%;
+	color: #000;
+	border: 1px #000;
+	margin:  15px 140px;
+	font-size: 1.1rem
+	/*text-shadow: 1px 1px 5px #333*/
+}
+.caption3
+{
+	position: absolute;
+	top: 35px;
+	width: 100%;
+	height: 50%;
+	color: #fff;
+	border: 1px #000;
+	margin:  0px 0px;
+	font-size: 5rem;
+	text-shadow: 1px 1px 5px #333;
+	font-family: "Dancing Script", cursive;
+}
+.menu
+{
+	width: 100%;
+	height: auto;
+	background: white;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 99;
+	box-shadow: 1px 2px 10px #333
+}
